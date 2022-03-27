@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fdfff5;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(banner-poster.png);
+    background-size: cover;
+    width: 100vw;  
+    height: 89vh;
+    position: relative;
+}
+ .text-box {
+    width: 90%;
+    color:#fdfff5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -60%);
+    text-align: center;
+    line-height: 1.5;
+} 
+.dyk {
+    font-size: 1.5em;
+    text-shadow: 1px 1px rgb(13, 14, 8);
+}
+.text-box h1 {
+    font-size: 3em;
+    text-shadow: 3px 2px rgb(42, 48, 10);
+}
+.sub-head {
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px rgb(114, 113, 77);
+    }
+.sub-head:hover{
+    text-decoration:underline rgb(226, 189, 121);
+}
+nav {
+    display: flex;
+    padding: 0% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    text-shadow: 1px 1px #aa8a6a;
+    letter-spacing: 4px;
+    background-color: #aa8a6a;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.logo {
+    width: 30vw;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a:hover {
+    background-color: #777471;
+}
+nav img {
+    height: 9vh;
+    width: 16vw;
+    padding-top: 2%;
+}
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        background-color: #777471;
+        z-index: 2;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 800px) and (min-width: 401px ) {
+    nav img {
+        height: 6vh;
+        width: 26vw;
+    }
+    .header {
+        background-image: url(smaller.png);
+        background-size: cover;  
+    }
+    .text-box {
+        width: 51%;
+        margin-left: 11%;
+    }
+    .text-box h1 {
+        font-size: 2em;
+    }
+    .dyk {
+        font-size: 1em;
+    }
+    .sub-head {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    nav img {
+        height: 6vh;
+        width: 26vw;
+    }
+    .header {
+        background-image: url(smaller.png);
+        background-size: cover;  
+    }
+    .text-box {
+        width: 60%;
+    }
+    .text-box h1 {
+        font-size: 1.5em;
+    }
+    .dyk {
+        font-size: 1em;
+    }
+    .sub-head {
+        font-size: 1em;
+    }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    .text-box {
+        width: 60%;
+    }
+}
+
+
+/* services */
+
+/* top div  */
+.services {
+    margin-top: 5%;
+    text-align: center;
+    line-height: 1.5;
+}
+.services span:hover {
+    background-color: #aa8a6a;
+}
+.top-services h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.para {
+    padding: 0 5%;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: black;
+    line-height: 2;
+}
+.top-line {
+    color:rgb(58, 130, 172);
+    padding: 0 5%;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+/* main div  */
+.main-services {
+    margin-top: 5%;
+    background-color: rgb(245, 237, 226);
+}
+.main-services h1 {
+    padding-top: 4%;
+    font-size: 36px;
+    color: #272625;
+}
+.main-services h1::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #737e73;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.main-services h1:hover::after{
+    width: 30%;
+}  
+
+/* card */
+.cards {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3% 5% 5% 5%;
+}
+.cards h4 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex-grow: 1;
+    flex-basis: 22vw;
+    /* change basis to > 22vw to make it responsive */
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 16px;
+  }
+
+/* change basis to > 22vw to make it responsive */
+@media (min-width: 525px) and (max-width: 800px)  {
+    .card {
+        flex-basis: 30vw;
+    }
+}
+@media (max-width: 524px) {
+    .card {
+        flex-basis: 50vw !important;
+    }
+}
+
+/* button  */
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    background-color: rgb(207, 147, 69);
+    color: white;
+}
+.button:hover {
+  background-color: rgb(139, 220, 239);
+  color: black;
+}
+
+/* clinics section  */
+.row {
+    display: flex;
+    gap: 2rem;
+    padding-top: 5%;
+}
+.clinics {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.clinics h1 {
+    padding-bottom: 5px;
+}
+.clinic-column {
+    flex-basis: 32%;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    /* flex-basis: 100%; */
+    /* height: 100%; */
+}
+
+.clinic-column img{
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: 0.5s;
+}
+.layer h1, .layer p {
+    opacity: 0;
+}
+.layer:hover{
+    opacity: 0.9;
+}
+.layer-text {
+    line-height: 3;
+}
+.layer:hover h1 {
+    text-shadow:2px 2px rgb(190, 221, 220);
+}
+.layer:hover h1, .layer:hover p {
+    color:black;
+    background-color: white;
+    transition: 0.7s;
+    opacity: 1;
+}
+
+/* making clinics responsive */
+@media (max-width: 800px) {
+    .row {
+        display: block;
+    }
+}
+
+
+/* testimonials */
+.testimonials {
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    background: #fff3f3;
+}
+.testimonials p {
+    padding: 2% 3% 0 3%;
+    letter-spacing: 0.2;
+    line-height: 1.5;
+    color:#545554;
+}
+.testimonial-col {
+    flex-basis: 31%;
+    cursor: pointer;
+    text-align: left;
+    background: rgb(238, 241, 233);
+    padding: 25px;
+}
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;  
+}
+.date, .refr p {
+    font-size: small;
+    color: #737e73;
+}
+.cust-name {
+    color:#272625;
+}
+.testimonial-col p {
+    line-height: 1.5;
+    color: rgb(80, 78, 78);
+}
+
+.refr {
+    display: flex;
+    padding-top: 8px;
+}
+.refr p {
+    font-size: 14px;
+    color:#7b7e7b;
+    padding-right: 1px;
+}
+.refr img {
+    height: 30px;
+    padding-top: 4px;
+}
+
+/* footer  */
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #242934;
+}
+.footer h4 {
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 1%;
+    color: white;
+    font-size: large;
+    letter-spacing: 1.5px;
+}
+.footer h4:hover {
+    color: rgb(240, 186, 186);
+    /* background-color: aliceblue; */
+}
+.footer p {
+    padding: 0 5% 2% 5%;
+    color:rgb(188, 192, 196);
+    font-weight: 300;
+    font-size:medium;
+}
+.fa-brands {
+    letter-spacing: 2rem;
+    padding-bottom: 2%;
+    color:aliceblue;
+    font-size: x-large;
+    cursor: pointer;
+}
+.fa-brands:hover {
+    color:rgb(240, 178, 178);
+    transition: 0.3s;
+}
+.fa-solid {
+    color: rgb(288, 78, 78);
+}
