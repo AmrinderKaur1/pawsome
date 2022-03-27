@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=League+Spartan:wght@200;500;300;700;100&family=Spartan:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#" class="logo"><img src="dlogo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <!-- <i class="fa-duotone fa-circle-xmark"></i> -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">OUR SERVICES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box ">
+            <!-- <img src="banner-poster.png"> -->
+            <p class="dyk">Did you Know ?</p>
+            <h1>Pets Help your health ! </h1>
+            <p class="sub-head">Make sure you take care of their health as well. <br> We at 
+            <span class="name">PAWSOME</span> provide the best in town vet support !</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="top-services">
+        <p class="top-line">CARING FOR YOUR FAMILY</p>
+        <h1>Here For your pet Everyday</h1>
+        <p class="para">At <span>PAWSOME</span> Veterinary Clinic, we pride ourselves on taking care of each pet as if they were our own. 
+            From wellness exams, to surgery, and everything in between, we are here to help your pet stay happy 
+            and healthy their whole life.</p>
+        </div>
+
+        <div class="main-services">
+            <h1>Our Services</h1>
+
+            <div class="cards">
+                <!-- card 1 -->
+                <div class="card"> 
+                    <img src="https://media.istockphoto.com/photos/doctor-veterinarian-at-clinic-picture-id879798260?k=20&m=879798260&s=612x612&w=0&h=fJxsRIYHHma-djKDqOrrHYy0UufodW-3AIUPxZ-KGwE=" alt="card img" style="height: 74%;">
+                    <div class="container">
+                        <h4>Wellness Exams</h4>
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="card"> 
+                    <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-38991-800.jpg" alt="card img" style="height: 74%;">
+                    <div class="container">
+                        <h4>Surgery</h4>
+                    </div>
+                </div>
+
+                <!-- card3 -->
+                <div class="card"> 
+                    <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/maltese-dog-vaccination-vet-injection-300x300-1280x720.jpg" alt="card img" style="height: 74%;">
+                    <div class="container">
+                        <h4>Vaccines</h4>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card"> 
+                    <img src="https://www.walmartpetrx.com/images/newlook/autoship/main-img.jpg" alt="card img" style="height: 74%;">
+                    <div class="container">
+                        <h4>Pharmacy</h4>
+                    </div>
+                </div>
+
+                <!-- card5 -->
+                <div class="card"> 
+                    <img src="https://thumbs.dreamstime.com/b/female-vet-microscope-female-vet-dog-microscope-female-researcher-microscope-laboratory-veterinary-107635881.jpg" alt="card img" style="height: 74%;">
+                    <div class="container">
+                        <h4>Laboratory</h4>
+                    </div>
+                </div>
+
+                <!-- card6 -->
+                <div class="card"> 
+                    <img src="https://scottsdalecatclinic.com/wp-content/uploads/sites/60/2021/04/scottsdale-cat-clinic-feline-dental-cleanings-e1619717334698.png" alt="card img" style="height: 74%;">
+                    <div class="container">
+                        <h4>Dental Care</h4>
+                    </div>
+                </div>                
+            </div>
+            <a href="#"><button class="button">View All Services</button></a>
+        </div>
+    </section>
+
+    <section class="clinics" id="contact">
+        <h1>Our clinics country wide</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="clinic-column">
+                <img src="https://i.pinimg.com/564x/ca/67/57/ca6757b875275b41d2cd68e7a21f302b.jpg">
+                <div class="layer">
+                    <div class="layer-text">
+                        <h1 class="ok">CALIFORNIA</h1>
+                        <p>Pawsome Veterinary Clinic<br>
+                        91 xyz Road, California, AB 0###<br>
+                        Phone: 010-212-XYZ <br>
+                        Email: hello@xyz.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clinic-column">
+                <img src="https://i.pinimg.com/564x/8c/1c/d1/8c1cd13232bb1985b938424b67f7150f.jpg"
+                style="height: 100%;">
+                <div class="layer">
+                    <div class="layer-text">
+                        <h1>NEW YORK</h1>
+                        <p>Pawsome Veterinary Clinic<br>
+                        65 enclave, New York, AB 01##<br>
+                        Phone: 010-212-X7Z <br>
+                        Email: hellonyc@xyz.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clinic-column">
+                <img src="https://i.pinimg.com/564x/dd/0b/f6/dd0bf6d61486d0f7c5e74e1d6f885300.jpg"
+                style="height: 100%;">
+                <div class="layer">
+                    <div class="layer-text">
+                        <h1>DENVER</h1>
+                        <p>Pawsome Veterinary Clinic<br>
+                        90 xyz Road, Denver, AB 089#<br>
+                        Phone: 010-212-90Z <br>
+                        Email: hellodnv@xyz.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What PAWSOMERS say</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima tempora rerum corrupti blanditiis iure, maxime ut porro quod asperiores ipsa nihil commodi ullam sint nam obcaecati harum at dicta!</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p><span class="cust-name">killo45 </span><span class="date">19/12/2021</span><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis iste excepturi hic odit fugiat architecto, vero tempora. Assumenda sed id perspiciatis ad officia perferendis fugit earum rerum accusantium delectus.                    </p>
+                    <div class="refr">
+                        <p>Posted to </p><img src="https://rtx-source-icons.s3.amazonaws.com/logos/google.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <div>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p><span class="cust-name">Kim Hyman </span><span class="date">4/2/2022</span><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis iste excepturi hic odit fugiat architecto, vero tempora. Assumenda sed id perspiciatis ad officia perferendis fugit earum rerum accusantium delectus.                    </p>
+                    <div class="refr">
+                        <p>Posted to </p><img src="https://rtx-source-icons.s3.amazonaws.com/logos/google.png">
+                    </div>   
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <div>
+                    <p>⭐⭐⭐⭐</p>
+                    <p><span class="cust-name">David Pazul </span><span class="date">2/3/2022</span><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis iste excepturi hic odit fugiat architecto, vero tempora. Assumenda sed id perspiciatis ad officia perferendis fugit earum rerum accusantium delectus.                    </p>
+                    <div class="refr">
+                        <p>Posted to </p><img src="https://rtx-source-icons.s3.amazonaws.com/logos/google.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Id doloribus, ad facere at incidunt sit adipisci aliquam magni nihil animi eius nulla aperiam sequi iste placeat? <br>
+            A veniam voluptas doloremque.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Amrinder Kaur.</p>
+        
+    </section>
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+
+
+</html>
